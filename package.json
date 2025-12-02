@@ -17,8 +17,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "axios": "^1.13.2",
-    "valtio": "^2.2.0"
+    "axios": "^1.13.2"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",

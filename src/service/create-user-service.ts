@@ -1,34 +1,33 @@
 import createClient from '../api/client';
-import { ACCOUNT } from '../enum/account.enum';
+import { USER } from '../enum/user.enum';
 import { IEmployeeInformation } from '../model/employee.model';
 import { IUserConnection, IUserCreate } from '../model/user.model';
-import connectionStore from '../store/connection.store';
 
 export default function (baseURL: string) {
   const client = createClient(baseURL);
   return {
     async signIn(credentials: IUserCreate) {
       const { data: connection } = await client.post<IUserConnection>(
-        ACCOUNT.ConnectAccount,
+        USER.ConnectAccount,
         credentials
       );
 
-      return connectionStore(connection);
+      return connection;
     },
     async signUp(employee: IEmployeeInformation, credentials: IUserCreate) {
       const { data: connection } = await client.post<IUserConnection>(
-        ACCOUNT.CreateAccount,
+        USER.CreateAccount,
         {
           employee,
           credentials,
         }
       );
 
-      return connectionStore(connection);
+      return connection;
     },
     async authenticate(nickname: string) {
       const { data: hasAccount } = await client.get<boolean>(
-        ACCOUNT.AuthenticateNickname,
+        USER.AuthenticateNickname,
         {
           params: {
             nickname,

@@ -1,5 +1,5 @@
-import employeeStore from './store/employee.store';
-import connectionStore from './store/connection.store';
-import accountService from './service/account.service';
+import createAccountService from './service/create-user-service';
 
-export default { employeeStore, connectionStore, accountService };
+export default function (baseURL: string) {
+  return { account: createAccountService(baseURL) };
+}
