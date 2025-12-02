@@ -1,8 +1,8 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import IMeasurementUnitService from '@/interface/measurement-unit-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
-import { IMeasurementUnitResponse } from '@/model/measurement-unit.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import IMeasurementUnitService from '../interface/measurement-unit-service.interface';
+import { ICreationResponse } from '../model/creation.model';
+import { IMeasurementUnitResponse } from '../model/measurement-unit.model';
 
 export default function (baseURL: string): IMeasurementUnitService {
   const client = createClient(baseURL);

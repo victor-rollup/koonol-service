@@ -1,5 +1,5 @@
-import { ICreationResponse } from '@/model/creation.model';
-import { IEmployeeCreate, IEmployeeResponse } from '@/model/employee.model';
+import { ICreationResponse } from '../model/creation.model';
+import { IEmployeeCreate, IEmployeeResponse } from '../model/employee.model';
 export default interface IEmployeeService {
     createEmployee(employee: IEmployeeCreate): Promise<ICreationResponse>;
     getEmployeById(id: number): Promise<IEmployeeResponse>;

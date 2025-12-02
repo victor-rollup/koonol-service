@@ -1,8 +1,8 @@
-import { ICreationResponse } from '@/model/creation.model';
+import { ICreationResponse } from '../model/creation.model';
 import {
   INationalityCreate,
   INationalityResponse,
-} from '@/model/nationality.model';
+} from '../model/nationality.model';
 
 export default interface INationalityService {
   createNationality(

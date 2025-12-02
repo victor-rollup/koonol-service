@@ -1,8 +1,8 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import IGenderService from '@/interface/gender-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
-import { IGenderResponse } from '@/model/gender.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import IGenderService from '../interface/gender-service.interface';
+import { ICreationResponse } from '../model/creation.model';
+import { IGenderResponse } from '../model/gender.model';
 
 export default function (baseURL: string): IGenderService {
   const client = createClient(baseURL);

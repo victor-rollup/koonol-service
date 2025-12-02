@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = default_1;
-const create_client_1 = require("@/api/create-client");
-const routes_enum_1 = require("@/enum/routes.enum");
+const create_client_1 = require("../api/create-client");
+const routes_enum_1 = require("../enum/routes.enum");
 function default_1(baseURL) {
     const client = (0, create_client_1.default)(baseURL);
     return {

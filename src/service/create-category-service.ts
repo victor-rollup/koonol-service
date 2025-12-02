@@ -1,7 +1,7 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import ICategoryService from '@/interface/category-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import ICategoryService from '../interface/category-service.interface';
+import { ICreationResponse } from '../model/creation.model';
 
 export default function (baseURL: string, token: string): ICategoryService {
   const client = createClient(baseURL, token);

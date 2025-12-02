@@ -1,8 +1,8 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import IRolService from '@/interface/rol-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
-import { IRolResponse } from '@/model/rol.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import IRolService from '../interface/rol-service.interface';
+import { ICreationResponse } from '../model/creation.model';
+import { IRolResponse } from '../model/rol.model';
 
 export default function (baseURL: string, token: string): IRolService {
   const client = createClient(baseURL, token);

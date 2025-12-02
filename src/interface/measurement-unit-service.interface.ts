@@ -1,8 +1,8 @@
-import { ICreationResponse } from '@/model/creation.model';
+import { ICreationResponse } from '../model/creation.model';
 import {
   IMeasurementUnitCreate,
   IMeasurementUnitResponse,
-} from '@/model/measurement-unit.model';
+} from '../model/measurement-unit.model';
 
 export default interface IMeasurementUnitService {
   createMeasurementUnit(

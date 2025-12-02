@@ -1,5 +1,5 @@
-import { ICreationResponse } from '@/model/creation.model';
-import { ICustomerCreate, ICustomerResponse } from '@/model/customer.model';
+import { ICreationResponse } from '../model/creation.model';
+import { ICustomerCreate, ICustomerResponse } from '../model/customer.model';
 export default interface ICustomerService {
     createCustomer(customer: ICustomerCreate): Promise<ICreationResponse>;
     getCustomerById(id: number): Promise<ICustomerResponse>;

@@ -1,8 +1,8 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import IProductService from '@/interface/product-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
-import { IProductResponse } from '@/model/product.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import IProductService from '../interface/product-service.interface';
+import { ICreationResponse } from '../model/creation.model';
+import { IProductResponse } from '../model/product.model';
 
 export default function (baseURL: string, token: string): IProductService {
   const client = createClient(baseURL, token);

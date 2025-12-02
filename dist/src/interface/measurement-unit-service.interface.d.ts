@@ -1,5 +1,5 @@
-import { ICreationResponse } from '@/model/creation.model';
-import { IMeasurementUnitCreate, IMeasurementUnitResponse } from '@/model/measurement-unit.model';
+import { ICreationResponse } from '../model/creation.model';
+import { IMeasurementUnitCreate, IMeasurementUnitResponse } from '../model/measurement-unit.model';
 export default interface IMeasurementUnitService {
     createMeasurementUnit(measurementUnit: IMeasurementUnitCreate): Promise<ICreationResponse>;
     getMeasurementUnitById(id: number): Promise<IMeasurementUnitResponse>;

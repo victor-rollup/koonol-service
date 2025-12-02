@@ -1,7 +1,7 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import IUserService from '@/interface/user-service.interface';
-import { IUserConnection } from '@/model/user.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import IUserService from '../interface/user-service.interface';
+import { IUserConnection } from '../model/user.model';
 
 export default function (baseURL: string): IUserService {
   const client = createClient(baseURL);

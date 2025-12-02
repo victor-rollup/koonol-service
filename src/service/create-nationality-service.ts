@@ -1,8 +1,8 @@
-import createClient from '@/api/create-client';
-import { Routes } from '@/enum/routes.enum';
-import INationalityService from '@/interface/nationality-service.interface';
-import { ICreationResponse } from '@/model/creation.model';
-import { INationalityResponse } from '@/model/nationality.model';
+import createClient from '../api/create-client';
+import { Routes } from '../enum/routes.enum';
+import INationalityService from '../interface/nationality-service.interface';
+import { ICreationResponse } from '../model/creation.model';
+import { INationalityResponse } from '../model/nationality.model';
 
 export default function (baseURL: string): INationalityService {
   const client = createClient(baseURL);

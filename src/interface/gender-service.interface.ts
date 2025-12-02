@@ -1,5 +1,5 @@
-import { ICreationResponse } from '@/model/creation.model';
-import { IGenderCreate, IGenderResponse } from '@/model/gender.model';
+import { ICreationResponse } from '../model/creation.model';
+import { IGenderCreate, IGenderResponse } from '../model/gender.model';
 
 export default interface IGenderService {
   createGender(gender: IGenderCreate): Promise<ICreationResponse>;
