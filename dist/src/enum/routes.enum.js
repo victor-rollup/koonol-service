@@ -1,0 +1,27 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Routes = void 0;
+var Routes;
+(function (Routes) {
+    Routes["CATEGORY"] = "/category/administration";
+    Routes["CATEGORY_COLLECTION"] = "/category/collection";
+    Routes["CUSTOMER"] = "/customer/administration";
+    Routes["CUSTOMER_COLLECTION"] = "/customer/collection";
+    Routes["EMPLOYEE"] = "/employee/administration";
+    Routes["EMPLOYEE_COLLECTION"] = "/employee/collection";
+    Routes["GENDER"] = "/gender/administration";
+    Routes["GENDER_COLLECTION"] = "/gender/collection";
+    Routes["MEASUREMENT_UNIT"] = "/measurement-unit/administration";
+    Routes["MEASUREMENT_UNIT_COLLECTION"] = "/measurement-unit/collection";
+    Routes["NATIONALITY"] = "/nationality/administration";
+    Routes["NATIONALITY_COLLECTION"] = "/nationality/collection";
+    Routes["PRODUCT"] = "/product/administration";
+    Routes["PRODUCT_COLLECTION"] = "/product/collection";
+    Routes["ROL"] = "/rol/administration";
+    Routes["ROL_COLLECTION"] = "/rol/collection";
+    Routes["SALE"] = "/sale/administration";
+    Routes["SALE_COLLECTION"] = "/sale/collection";
+    Routes["CREATE_ACCOUNT"] = "/account/create-account";
+    Routes["CONNECT_ACCOUNT"] = "/account/connect-account";
+    Routes["AUTHENTICATE_NICKNAME"] = "/account/authenticate-nickname";
+})(Routes || (exports.Routes = Routes = {}));

@@ -1,22 +1,22 @@
-import createClient from '../api/client';
-import { USER } from '../enum/user.enum';
-import { IEmployeeInformation } from '../model/employee.model';
-import { IUserConnection, IUserCreate } from '../model/user.model';
+import createClient from '@/api/create-client';
+import { Routes } from '@/enum/routes.enum';
+import IUserService from '@/interface/user-service.interface';
+import { IUserConnection } from '@/model/user.model';
 
-export default function (baseURL: string) {
+export default function (baseURL: string): IUserService {
   const client = createClient(baseURL);
   return {
-    async signIn(credentials: IUserCreate) {
+    async signIn(credentials) {
       const { data: connection } = await client.post<IUserConnection>(
-        USER.ConnectAccount,
+        Routes.CONNECT_ACCOUNT,
         credentials
       );
 
       return connection;
     },
-    async signUp(employee: IEmployeeInformation, credentials: IUserCreate) {
+    async signUp(employee, credentials) {
       const { data: connection } = await client.post<IUserConnection>(
-        USER.CreateAccount,
+        Routes.CREATE_ACCOUNT,
         {
           employee,
           credentials,
@@ -25,9 +25,9 @@ export default function (baseURL: string) {
 
       return connection;
     },
-    async authenticate(nickname: string) {
+    async authenticate(nickname) {
       const { data: hasAccount } = await client.get<boolean>(
-        USER.AuthenticateNickname,
+        Routes.AUTHENTICATE_NICKNAME,
         {
           params: {
             nickname,

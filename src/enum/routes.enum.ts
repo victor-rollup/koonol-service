@@ -1,0 +1,32 @@
+export enum Routes {
+  CATEGORY = '/category/administration',
+  CATEGORY_COLLECTION = '/category/collection',
+
+  CUSTOMER = '/customer/administration',
+  CUSTOMER_COLLECTION = '/customer/collection',
+
+  EMPLOYEE = '/employee/administration',
+  EMPLOYEE_COLLECTION = '/employee/collection',
+
+  GENDER = '/gender/administration',
+  GENDER_COLLECTION = '/gender/collection',
+
+  MEASUREMENT_UNIT = '/measurement-unit/administration',
+  MEASUREMENT_UNIT_COLLECTION = '/measurement-unit/collection',
+
+  NATIONALITY = '/nationality/administration',
+  NATIONALITY_COLLECTION = '/nationality/collection',
+
+  PRODUCT = '/product/administration',
+  PRODUCT_COLLECTION = '/product/collection',
+
+  ROL = '/rol/administration',
+  ROL_COLLECTION = '/rol/collection',
+
+  SALE = '/sale/administration',
+  SALE_COLLECTION = '/sale/collection',
+
+  CREATE_ACCOUNT = '/account/create-account',
+  CONNECT_ACCOUNT = '/account/connect-account',
+  AUTHENTICATE_NICKNAME = '/account/authenticate-nickname',
+}
